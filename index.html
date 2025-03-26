@@ -6,42 +6,51 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Student Portfolio</title>
     <style>
+        /* General Styles */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Arial', sans-serif;
+            background-color: #fafafa; /* Light gray background */
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
         header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
+            background-color: #4a90e2; /* Bright blue */
+            color: white;
+            padding: 40px;
             text-align: center;
+            border-bottom: 5px solid #0a74da; /* Darker blue */
         }
 
         header h1 {
             margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
         }
 
         nav {
-            background-color: #444;
+            background-color: #2c3e50; /* Dark blue-gray */
             overflow: hidden;
         }
 
         nav a {
             color: white;
-            padding: 14px 20px;
+            padding: 16px 20px;
             text-decoration: none;
             float: left;
             text-align: center;
+            font-size: 1.1rem;
         }
 
         nav a:hover {
-            background-color: #575757;
+            background-color: #34495e; /* Slightly lighter blue-gray */
         }
 
+        /* Main container */
         .container {
             padding: 20px;
             display: flex;
@@ -49,19 +58,41 @@
             justify-content: space-between;
         }
 
-        .bio, .projects, .contact {
-            background-color: white;
+        /* Bio Section */
+        .bio {
+            background-color: #ffffff; /* White background */
             margin: 20px;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
             flex: 1;
             min-width: 280px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .bio:hover {
+            transform: translateY(-10px); /* Hover effect */
         }
 
         .bio img {
             width: 100%;
-            border-radius: 8px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Projects Section */
+        .projects {
+            background-color: #ffffff; /* White background */
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .projects h2 {
+            color: #4a90e2; /* Bright blue for headings */
         }
 
         .projects ul {
@@ -70,17 +101,65 @@
         }
 
         .projects li {
-            background-color: #f0f0f0;
+            background-color: #ecf0f1; /* Light gray background for list items */
             margin: 10px 0;
-            padding: 10px;
+            padding: 15px;
             border-radius: 8px;
         }
 
+        .projects li a {
+            color: #3498db; /* Link color */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .projects li a:hover {
+            color: #1d72b8; /* Darker blue when hovered */
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: #ffffff; /* White background */
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .contact h2 {
+            color: #4a90e2; /* Bright blue */
+        }
+
+        .contact ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contact li {
+            background-color: #f9fafb; /* Very light gray */
+            margin: 8px 0;
+            padding: 10px;
+            border-radius: 6px;
+        }
+
+        .contact li a {
+            color: #e67e22; /* Orange color for links */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact li a:hover {
+            color: #d35400; /* Darker orange when hovered */
+        }
+
+        /* Footer */
         footer {
-            background-color: #333;
+            background-color: #2c3e50; /* Dark blue-gray */
             color: white;
             text-align: center;
-            padding: 10px;
+            padding: 15px;
             position: fixed;
             width: 100%;
             bottom: 0;
@@ -139,3 +218,9 @@
     </footer>
 </body>
 </html>
+
+           
+
+       
+                    
+              
